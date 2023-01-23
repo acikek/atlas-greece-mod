@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "atlasgreece",
+  "version": "${version}",
+  "name": "Atlas Greece",
+  "description": "A dimension centered around the Peloponnese. Powered by Atlas.",
+  "authors": [
+    "acikek"
+  ],
+  "contact": {
+    "website": "https://modrinth.com/mod/atlas-greece",
+    "repo": "https://github.com/acikek/atlas-greece-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/atlasgreece/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.acikek.atlasgreece.AtlasGreece"
+    ]
+  },
+  "mixins": [
+    "atlasgreece.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.13",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
