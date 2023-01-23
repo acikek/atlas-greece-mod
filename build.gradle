@@ -32,6 +32,7 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     modImplementation include("net.kyrptonaught:customportalapi:${project.cpa_version}")
+    modImplementation include("maven.modrinth:data-criteria:${project.datacriteria_version}")
 
     modLocalRuntime "maven.modrinth:atlas:${project.atlas_version}"
 }

@@ -6,8 +6,6 @@ import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
-import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
-import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
@@ -33,8 +31,8 @@ public class AtlasGreece implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Καλώς ήρθες στην Ελλάδα!");
         MoussakaItem.register();
+        GreecePortal.register();
         FabricLoader.getInstance().getModContainer(ID).ifPresent(AtlasGreece::registerPack);
-        registerPortal();
     }
 
     public static void registerPack(ModContainer mod) {
@@ -42,14 +40,5 @@ public class AtlasGreece implements ModInitializer {
                 id("atlas-greece"), mod, Text.translatable("pack.atlasgreece.dimension"),
                 ResourcePackActivationType.ALWAYS_ENABLED
         );
-    }
-
-    public static void registerPortal() {
-        CustomPortalBuilder.beginPortal()
-                .frameBlock(Blocks.SMOOTH_QUARTZ)
-                .lightWithWater()
-                .destDimID(AtlasGreece.DIMENSION_ID)
-                .tintColor(121, 182, 242)
-                .registerPortal();
     }
 }

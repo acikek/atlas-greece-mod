@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "atlasgreece:moussaka"
+    },
+    "title": {
+      "translate": "advancements.atlasgreece.eat_moussaka.title"
+    },
+    "description": {
+      "translate": "advancements.atlasgreece.eat_moussaka.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eat_moussaka": {
+      "trigger": "atlasgreece:moussaka"
+    }
+  }
+}

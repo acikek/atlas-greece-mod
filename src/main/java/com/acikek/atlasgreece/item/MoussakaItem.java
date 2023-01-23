@@ -2,6 +2,7 @@ package com.acikek.atlasgreece.item;
 
 import com.acikek.atlasgreece.AtlasGreece;
 import com.acikek.atlasgreece.Destination;
+import com.acikek.datacriteria.api.DataCriteriaAPI;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.entity.LivingEntity;
@@ -58,6 +59,7 @@ public class MoussakaItem extends Item {
                 Map.Entry<String, Destination> destination = Destination.getDestination(serverPlayer);
                 teleport(serverPlayer, destination.getValue().pos(), AtlasGreece.DIMENSION);
                 serverPlayer.sendMessage(destination.getValue().getSpawnText(destination.getKey()).styled(style -> style.withItalic(true).withFormatting(Formatting.GRAY)));
+                DataCriteriaAPI.trigger(AtlasGreece.id("moussaka"), serverPlayer);
             }
         }
         return super.finishUsing(stack, world, user);

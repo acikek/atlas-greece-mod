@@ -1,0 +1,23 @@
+{
+  "parent": "atlasgreece:eat_moussaka",
+  "display": {
+    "icon": {
+      "item": "minecraft:water_bucket"
+    },
+    "title": {
+      "translate": "advancements.atlasgreece.use_portal.title"
+    },
+    "description": {
+      "translate": "advancements.atlasgreece.use_portal.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eat_moussaka": {
+      "trigger": "atlasgreece:portal"
+    }
+  }
+}

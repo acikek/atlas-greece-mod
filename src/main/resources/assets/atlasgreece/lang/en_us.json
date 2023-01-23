@@ -1,6 +1,10 @@
 {
   "item.atlasgreece.moussaka": "Moussaka",
   "pack.atlasgreece.dimension": "Atlas Greece",
+  "advancements.atlasgreece.eat_moussaka.title": "What a Night",
+  "advancements.atlasgreece.eat_moussaka.description": "Eat some Moussaka and end up in Greece",
+  "advancements.atlasgreece.use_portal.title": "Arise from the Aegean",
+  "advancements.atlasgreece.use_portal.description": "Light and use a portal to Greece",
   "spawn.atlasgreece.coast": "You awake after washing up on the shore of %s.",
   "spawn.atlasgreece.inland": "After a brief moment, you find yourself amongst %s.",
   "spawn.atlasgreece.mountain": "Your eyes open to the landscape on top of %s.",
