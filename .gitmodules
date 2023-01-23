@@ -1,0 +1,3 @@
+[submodule "src/main/resources/resourcepacks/atlas-greece"]
+	path = src/main/resources/resourcepacks/atlas-greece
+	url = https://github.com/acikek/atlas-greece

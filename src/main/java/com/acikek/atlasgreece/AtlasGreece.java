@@ -8,6 +8,7 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
@@ -38,7 +39,8 @@ public class AtlasGreece implements ModInitializer {
 
     public static void registerPack(ModContainer mod) {
         ResourceManagerHelper.registerBuiltinResourcePack(
-                id("dimension"), mod, "Atlas Greece", ResourcePackActivationType.ALWAYS_ENABLED
+                id("atlas-greece"), mod, Text.translatable("pack.atlasgreece.dimension"),
+                ResourcePackActivationType.ALWAYS_ENABLED
         );
     }
 
