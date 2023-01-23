@@ -1,14 +1,16 @@
 package com.acikek.atlasgreece;
 
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.MutableText;
+import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.acikek.atlasgreece.Destinations.Type.*;
-import static com.acikek.atlasgreece.Destinations.Destination.of;
+import static com.acikek.atlasgreece.Destination.Type.*;
 
-public class Destinations {
+public record Destination(BlockPos pos, Type type) {
 
     public enum Type {
         COAST,
@@ -16,11 +18,8 @@ public class Destinations {
         MOUNTAIN
     }
 
-    public record Destination(BlockPos pos, Type type) {
-
-        public static Destination of(int x, int y, int z, Type type) {
-            return new Destination(new BlockPos(x, y, z), type);
-        }
+    public static Destination of(int x, int y, int z, Type type) {
+        return new Destination(new BlockPos(x, y, z), type);
     }
 
     public static final Map<String, Destination> DESTINATIONS = new HashMap<>();
@@ -63,5 +62,15 @@ public class Destinations {
         DESTINATIONS.put("folegandros", of(2995, 71, 1650, COAST));
         DESTINATIONS.put("adamantas", of(2258, 62, 1452, COAST));
         DESTINATIONS.put("serifos", of(2350, 67, 602, COAST));
+    }
+
+    public static Map.Entry<String, Destination> getDestination(ServerPlayerEntity player) {
+        var destinations = DESTINATIONS.entrySet().stream().toList();
+        return destinations.get(player.world.random.nextInt(destinations.size()));
+    }
+
+    public MutableText getSpawnText(String name) {
+        Text destinationText = Text.translatable("destination.atlasgreece." + name);
+        return Text.translatable("spawn.atlasgreece." + type.name().toLowerCase(), destinationText);
     }
 }
