@@ -51,7 +51,6 @@ public class MoussakaItem extends Item {
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         if (user instanceof ServerPlayerEntity serverPlayer) {
-            System.out.println(serverPlayer.getWorld().getRegistryKey().getValue());
             if (serverPlayer.getWorld().getRegistryKey().getValue().equals(AtlasGreece.DIMENSION_ID)) {
                 teleport(serverPlayer, getReturnPosition(serverPlayer), World.OVERWORLD);
             }
@@ -67,7 +66,7 @@ public class MoussakaItem extends Item {
     public static void register() {
         Registry.register(Registries.ITEM, AtlasGreece.id("moussaka"), INSTANCE);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries ->
-            entries.addAfter(Items.COOKED_RABBIT, INSTANCE);
+            entries.addAfter(Items.COOKED_RABBIT, INSTANCE)
         );
     }
 }
