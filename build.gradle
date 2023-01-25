@@ -19,6 +19,14 @@ repositories {
         }
     }
 
+    maven {
+        url "https://maven.shedaniel.me/"
+    }
+
+    maven {
+        url "https://maven.terraformersmc.com/releases/"
+    }
+
     mavenLocal()
 }
 
@@ -35,6 +43,10 @@ dependencies {
     modImplementation include("maven.modrinth:data-criteria:${project.datacriteria_version}")
 
     modLocalRuntime "maven.modrinth:atlas:${project.atlas_version}"
+
+    modImplementation "maven.modrinth:travelers-titles:${project.tt_version}"
+    modImplementation "me.shedaniel.cloth:cloth-config-fabric:${project.cc_version}"
+    modImplementation "com.yungnickyoung.minecraft.yungsapi:YungsApi:${project.yungsapi_version}"
 }
 
 processResources {

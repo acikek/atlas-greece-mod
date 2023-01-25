@@ -5,6 +5,7 @@
   "advancements.atlasgreece.eat_moussaka.description": "Eat some Moussaka and end up in Greece",
   "advancements.atlasgreece.use_portal.title": "Arise from the Aegean",
   "advancements.atlasgreece.use_portal.description": "Light and use a portal to Greece",
+  "subtitles.atlasgreece.dimension_enter": "Greece entered",
   "spawn.atlasgreece.coast": "You awake after washing up on the shore of %s.",
   "spawn.atlasgreece.inland": "After a brief moment, you find yourself amongst %s.",
   "spawn.atlasgreece.mountain": "Your eyes open to the landscape on top of %s.",
@@ -45,6 +46,6 @@
   "destination.atlasgreece.folegandros": "the island of Folegandros",
   "destination.atlasgreece.adamantas": "Adamantas in Milos",
   "destination.atlasgreece.serifos": "the island of Serifos",
-  "travelerstitles.atlasgreece.greece": "Greece",
-  "travelerstitles.atlasgreece.greece.color": "79b6f2"
+  "travelerstitles.atlasgreece.greece": "\u2345",
+  "travelerstitles.atlasgreece.greece.color": "ffffff"
 }

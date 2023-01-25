@@ -6,8 +6,11 @@ import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
@@ -27,11 +30,14 @@ public class AtlasGreece implements ModInitializer {
         return new Identifier(ID, path);
     }
 
+    public static final SoundEvent DIMENSION_ENTER = SoundEvent.of(id("dimension_enter"));
+
     @Override
     public void onInitialize() {
         LOGGER.info("Καλώς ήρθες στην Ελλάδα!");
         MoussakaItem.register();
         GreecePortal.register();
+        Registry.register(Registries.SOUND_EVENT, DIMENSION_ENTER.getId(), DIMENSION_ENTER);
         FabricLoader.getInstance().getModContainer(ID).ifPresent(AtlasGreece::registerPack);
     }
 

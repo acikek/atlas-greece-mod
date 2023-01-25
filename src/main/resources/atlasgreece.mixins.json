@@ -6,6 +6,7 @@
   "mixins": [
   ],
   "client": [
+    "client.TitleRenderManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

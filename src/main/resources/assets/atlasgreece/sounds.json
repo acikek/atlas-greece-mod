@@ -1,0 +1,8 @@
+{
+  "dimension_enter": {
+    "subtitle": "subtitles.atlasgreece.dimension_enter",
+    "sounds": [
+      "atlasgreece:dimension_enter"
+    ]
+  }
+}

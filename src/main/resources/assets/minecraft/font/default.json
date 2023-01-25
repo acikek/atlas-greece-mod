@@ -1,0 +1,13 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "atlasgreece:font/title.png",
+      "ascent": 4,
+      "height": 12,
+      "chars": [
+        "\u2345"
+      ]
+    }
+  ]
+}
