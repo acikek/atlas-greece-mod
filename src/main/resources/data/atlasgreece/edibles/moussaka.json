@@ -1,0 +1,176 @@
+{
+  "edible": {
+    "item": "atlasgreece:moussaka"
+  },
+  "rules": [
+    {
+      "from": [
+        "atlasgreece:greece"
+      ],
+      "destinations": {
+        "overworld": {
+          "world": "minecraft:overworld",
+          "location": "player_spawn"
+        }
+      }
+    },
+    {
+      "from": [
+        "!atlasgreece:greece"
+      ],
+      "default": {
+        "world": "atlasgreece:greece"
+      },
+      "destinations": {
+        "zakynthos": {
+          "pos": [-3351, 63, -618],
+          "message": "coast"
+        },
+        "kefalonia": {
+          "pos": [-3739, 63, -1546],
+          "message": "coast"
+        },
+        "lefkada": {
+          "pos": [-3641, 63, -2731],
+          "message": "coast"
+        },
+        "preveza": {
+          "pos": [-3574, 63, -2995],
+          "message": "coast"
+        },
+        "agrinio": {
+          "pos": [-2538, 65, -2299],
+          "message": "inland"
+        },
+        "patras": {
+          "pos": [-2005, 63, -1523],
+          "message": "coast"
+        },
+        "pyrgos": {
+          "pos": [-2419, 68, -482],
+          "message": "coast"
+        },
+        "kalmata": {
+          "pos": [-1404, 63, 861],
+          "message": "coast"
+        },
+        "gerolimenas": {
+          "pos": [-964, 63, 1935],
+          "message": "coast"
+        },
+        "sparta": {
+          "pos": [-933, 73, 767],
+          "message": "inland"
+        },
+        "taygetus": {
+          "pos": [-1042, 169, 1000],
+          "message": "mountain"
+        },
+        "kythera": {
+          "pos": [-45, 69, 2563],
+          "message": "coast"
+        },
+        "antikythera": {
+          "pos": [434, 63, 3101],
+          "message": "coast"
+        },
+        "leonidio": {
+          "pos": [-245, 64, 592],
+          "message": "coast"
+        },
+        "tripoli": {
+          "pos": [-990, 94, -92],
+          "message": "inland"
+        },
+        "kyllini": {
+          "pos": [-975, 169, -939],
+          "message": "mountain"
+        },
+        "argos": {
+          "pos": [-447, 64, -389],
+          "message": "coast"
+        },
+        "hydra": {
+          "pos": [711, 63, 229],
+          "message": "coast"
+        },
+        "corinth": {
+          "pos": [-134, 63, -943],
+          "message": "coast"
+        },
+        "megara": {
+          "pos": [516, 65, -1067],
+          "message": "coast"
+        },
+        "athens": {
+          "pos": [1151, 71, -1181],
+          "message": "inland"
+        },
+        "chalcis": {
+          "pos": [974, 63, -2000],
+          "message": "coast"
+        },
+        "lamia": {
+          "pos": [-1089, 66, -2924],
+          "message": "inland"
+        },
+        "parnassus": {
+          "pos": [-634, 169, -2122],
+          "message": "mountain"
+        },
+        "livadia": {
+          "pos": [-1089, 66, -2924],
+          "message": "inland"
+        },
+        "skyros": {
+          "pos": [2434, 63, -2889],
+          "message": "coast"
+        },
+        "psara": {
+          "pos": [4004, 67, -2160],
+          "message": "coast"
+        },
+        "karystos": {
+          "pos": [2190, 63, -1098],
+          "message": "coast"
+        },
+        "andros": {
+          "pos": [3022, 64, -738],
+          "message": "coast"
+        },
+        "tinos": {
+          "pos": [3384, 63, -143],
+          "message": "coast"
+        },
+        "naxos": {
+          "pos": [3721, 63, 713],
+          "message": "coast"
+        },
+        "paros": {
+          "pos": [3357, 63, 753],
+          "message": "coast"
+        },
+        "ios": {
+          "pos": [3594, 63, 1479],
+          "message": "coast"
+        },
+        "thera": {
+          "pos": [3712, 64, 2095],
+          "message": "coast"
+        },
+        "folegandros": {
+          "pos": [2995, 72, 1650],
+          "message": "coast"
+        },
+        "adamantas": {
+          "pos": [2258, 63, 1452],
+          "message": "coast"
+        },
+        "serifos": {
+          "pos": [2350, 68, 602],
+          "message": "coast"
+        }
+      }
+    }
+  ]
+}

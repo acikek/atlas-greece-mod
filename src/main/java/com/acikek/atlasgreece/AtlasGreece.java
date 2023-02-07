@@ -6,11 +6,8 @@ import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.World;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,8 +17,7 @@ public class AtlasGreece implements ModInitializer {
 
     public static final Logger LOGGER = LogManager.getLogger(ID);
 
-    public static final Identifier DIMENSION_ID = id("greece");
-    public static final RegistryKey<World> DIMENSION = RegistryKey.of(RegistryKeys.WORLD, DIMENSION_ID);
+    public static final Identifier DIMENSION = id("greece");
 
     public static Identifier id(String path) {
         return new Identifier(ID, path);

@@ -12,7 +12,7 @@ public class GreecePortal {
         CustomPortalBuilder.beginPortal()
                 .frameBlock(Blocks.SMOOTH_QUARTZ)
                 .lightWithWater()
-                .destDimID(AtlasGreece.DIMENSION_ID)
+                .destDimID(AtlasGreece.DIMENSION)
                 .tintColor(121, 182, 242)
                 .registerPostTPEvent(GreecePortal::handleTeleport)
                 .registerPortal();
